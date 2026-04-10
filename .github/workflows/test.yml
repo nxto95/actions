@@ -1,12 +1,11 @@
-name: second workflow
-
+name: test
 on:
     push:
         branches:
             - main
-
 jobs:
-    build:
+    echo:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "succeed"
+            - name: echo_hello
+              run: echo "hello from actions"
