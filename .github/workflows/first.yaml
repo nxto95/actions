@@ -9,4 +9,5 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "succeed"
+            - name: Echo success
+              run: echo "succeed"
